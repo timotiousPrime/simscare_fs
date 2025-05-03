@@ -1,0 +1,50 @@
+{% load static %}
+<!-- 
+<nav>
+    <div id="nav_logo">
+        <img class="nav_logo_img" src="{% static 'home/images/logos/SimsCareLogo-transparentbg.png' %}" alt="">
+        <p>SimsCare</p>
+    </div>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#aboutUs">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contactUs">Contact Us</a></li>
+    </ul>
+</nav> -->
+
+<nav class="bg-light navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid"> 
+        <a class="navbar-brand" href="#"> 
+            <div class="logo d-flex align-items-center">
+                <img src="{% static 'home/images/logos/SimsCareLogo-transparentbg.png' %}" alt="Logo" class="logo-img me-2" style="height: 3rem;">
+                <div class="logoText fs-4"> SimsCare
+                </div>
+            </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center"> 
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                </ul>
+        </div>
+    </div>
+</nav>
