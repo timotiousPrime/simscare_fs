@@ -1,0 +1,63 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover compassionate elder care in Durban and KwaZulu-Natal. Learn about our caregiving services led by Simmone Bouch. Contact SimsCare for personalized care solutions." />
+    <meta property="og:title" content="Compassionate Elder Care in Durban | SimsCare" />
+    <meta property="og:description" content="Explore our caregiving services with Simmone Bouch, offering personalized care solutions for the elderly with empathy and commitment." />
+    <meta property="og:image" content="{% static 'home/images/north pier.jpeg'%}" />
+    <meta property="og:url" content="www.simscare.co.za" />
+    <meta name="robots" content="index, follow" />
+
+    <title>SimsCare</title>
+    <link rel="icon" href="{% static 'home/images/logos/SimsCareLogo-transparentbg.png' %}" />
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/styleComponents.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M5GBLZ6V');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Navbar -->
+{% include 'includes/navbar.html' %}
+{% block body %}
+    
+{% endblock %}
+</body>
+</html>
+
+<script src="{% static 'home/js/bootstrap.js' %}"></script>
+<script src="{% static 'home/js/carousel.js' %}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+
+<!-- Google Tag Manager (noscript) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YQKTFGM377"></script>
+
+
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5GBLZ6V"
+    height="0" width="0" style="display:none;visibility:hidden">
+    </iframe>
+</noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-YQKTFGM377');
+  </script>
+  

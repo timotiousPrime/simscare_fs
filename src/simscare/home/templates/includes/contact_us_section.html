@@ -1,38 +1,39 @@
 {% load static %}
 
-<div id="contactUs" class="bg-dark">
-    <h2 class="ta-c">Contact Us</h2>
-    <p class="ta-c m1">Drop us a message or give us a call and we can see how we can get you the care you need.</p>
-    <div class="contactUsContainer ">
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="4b2a361b-2e2a-45d1-ab17-37f768100db2">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+<div id="contactUs" class="w-100 border border-2 border-danger bg-dark container text-light p-4">
+    <div class="servicesContainer border border-primary border-2">
+
+        <h2 class="text-center">Contact Us</h2>
+        <p class="text-center">Let's connect and find the right care solution together.</p>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+            <form action="https://api.web3forms.com/submit" method="POST" class="w-75">
+                <input type="hidden" name="access_key" value="4b2a361b-2e2a-45d1-ab17-37f768100db2">
+                <div class="form-group">
+                    <label class="form-label" for="name">Name:</label>
+                    <input class="form-control" class="form-control" type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Phone number:</label>
+                    <input class="form-control" type="" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-control" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea input class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <div class="text-center">
+                    <button class="btn btn-primary w-100 type="submit">Send Message</button>
+                </div>
+            </form>
+            <div class="contact-details mt-5 text-center">
+                <span class="mt-5"><i class="fa-solid fa-location-dot fa-3x"></i><p class="m1 fs-4">Durban, Kwa-Zulu Natal  </p></span>
+                <span class="mt-5"><i class="fa-solid fa-phone fa-3x "></i><p class="m1 fs-4"><strong>Phone: </strong><a href="tel:+27826816549" class="font-l contactDetail">082 681 6549</a></p></span>
+                <span class="mt-5"><i class="fa-solid fa-envelope fa-3x "></i><p class="m1 fs-4"><strong>Email: </strong> <a href="mailto:simmone@simscare.co.za" class="contactDetail">simmone@simscare.co.za</a></p></span>
             </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-            <div class="form-group flex-center">
-                <button class="primaryBtn" type="submit">Send Message</button>
-            </div>
-        </form>
-        <div class="contact-details">
-            <span class="m1"><i class="fa-solid fa-location-dot fa-3x"></i><p class="m1">Durban, Kwa-Zulu Natal  </p></span>
-            <span class="m1"><i class="fa-solid fa-phone fa-3x "></i><p class="m1 "><strong>Phone: </strong><a href="tel:+27826816549" class="font-l contactDetail">082 681 6549</a></p></span>
-            <span class="m1"><i class="fa-solid fa-envelope fa-3x "></i><p class="m1 "><strong>Email: </strong> <a href="mailto:simmone@simscare.co.za" class="contactDetail">simmone@simscare.co.za</a></p></span>
-            <!-- <hr> -->
-            <!-- <div class="pinContainer flex-row jc-between p2">
-                <span><i class="fa-solid fa-location-dot fa-3x"></i></span>
-                <span><i class="fa-solid fa-phone fa-3x"></i></span>
-                <span><i class="fa-solid fa-envelope fa-3x"></i></span>
-            </div> -->
         </div>
     </div>
 </div>

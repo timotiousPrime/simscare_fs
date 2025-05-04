@@ -1,17 +1,4 @@
 {% load static %}
-<!-- 
-<nav>
-    <div id="nav_logo">
-        <img class="nav_logo_img" src="{% static 'home/images/logos/SimsCareLogo-transparentbg.png' %}" alt="">
-        <p>SimsCare</p>
-    </div>
-    <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#aboutUs">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contactUs">Contact Us</a></li>
-    </ul>
-</nav> -->
 
 <nav class="bg-light navbar navbar-expand-lg navbar-light">
     <div class="container-fluid"> 
@@ -30,19 +17,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-center"> 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a> 
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a> 
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="{% url 'about_us' %}">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="{% url 'services' %}">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link" href="{% url 'pricing' %}">Pricing</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="{% url 'contact_us' %}">Contact</a>
                 </li>
                 </ul>
         </div>
