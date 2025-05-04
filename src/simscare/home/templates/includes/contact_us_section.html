@@ -1,39 +1,90 @@
 {% load static %}
 
-<div id="contactUs" class="w-100 border border-2 border-danger bg-dark container text-light p-4">
-    <div class="servicesContainer border border-primary border-2">
+<div id="contactUs" class="container-fluid bg-dark text-light p-4">
+    <div class="servicesContainer">
 
         <h2 class="text-center">Contact Us</h2>
         <p class="text-center">Let's connect and find the right care solution together.</p>
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <form action="https://api.web3forms.com/submit" method="POST" class="w-75">
+        <!-- <div class="contactContainer border border-2 border-primary d-flex flex-column flex-lg-row-reverse justify-content-center" style="height: 20rem;">
+            <form class="col-lg-6 border border-2 border-warning " action="">
+                <div class="formContainer w-75">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Name:</label>
+                        <input class="form-control" class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="name">Surname:</label>
+                        <input class="form-control" class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                </div>
+
+            </form>
+            <div class="contactDetails col-lg-6 border border-2 border-danger">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sit suscipit necessitatibus!</p>
+            </div>
+        </div> -->
+        <div class="d-flex flex-column flex-lg-row-reverse align-items-center justify-content-evenly">
+            <form action="https://api.web3forms.com/submit" method="POST" class="col-lg-5">
+                <div class="formContainer p-lg-4 mx-auto">
+                    <input type="hidden" name="access_key" value="4b2a361b-2e2a-45d1-ab17-37f768100db2">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Name:</label>
+                        <input class="form-control" class="form-control" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Phone number:</label>
+                        <input class="form-control" type="" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="form-control" type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea input class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <div class="text-center">
+                        <button class="btn btn-primary w-100 type="submit">Send Message</button>
+                    </div>
+                </div>
+            </form>
+            <div class="contact-details text-center col-lg-5 align-self-stretch d-flex flex-column justify-content-between py-4">
+                <span class=""><i class="fa-solid fa-location-dot fa-3x"></i><p class="m1 fs-4">Durban, Kwa-Zulu Natal  </p></span>
+                <span class=""><i class="fa-solid fa-phone fa-3x "></i><p class="m1 fs-4"><strong>Phone: </strong><a href="tel:+27826816549" class="font-l contactDetail">082 681 6549</a></p></span>
+                <span class=""><i class="fa-solid fa-envelope fa-3x "></i><p class="m1 fs-4"><strong>Email: </strong> <a href="mailto:simmone@simscare.co.za" class="contactDetail">simmone@simscare.co.za</a></p></span>
+            </div>
+        </div>
+        <!-- <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center">
+            <form action="https://api.web3forms.com/submit" method="POST" class="w-75 col-lg-6 border border-2 border-primary p-4">
                 <input type="hidden" name="access_key" value="4b2a361b-2e2a-45d1-ab17-37f768100db2">
-                <div class="form-group">
+                <div class="mb-3">
                     <label class="form-label" for="name">Name:</label>
-                    <input class="form-control" class="form-control" type="text" id="name" name="name" required>
+                    <input class="form-control" type="text" id="name" name="name" required>
                 </div>
-                <div class="form-group">
-                    <label for="email">Phone number:</label>
-                    <input class="form-control" type="" id="phone" name="phone" required>
+                <div class="mb-3">
+                    <label for="phone">Phone number:</label>
+                    <input class="form-control" type="tel" id="phone" name="phone" required>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="email">Email:</label>
                     <input class="form-control" type="email" id="email" name="email" required>
                 </div>
-                <div class="form-group">
+                <div class="mb-3">
                     <label for="message">Message:</label>
-                    <textarea input class="form-control" id="message" name="message" rows="5" required></textarea>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                 </div>
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <div class="text-center">
-                    <button class="btn btn-primary w-100 type="submit">Send Message</button>
+                    <button class="btn btn-primary w-100" type="submit">Send Message</button>
                 </div>
             </form>
-            <div class="contact-details mt-5 text-center">
-                <span class="mt-5"><i class="fa-solid fa-location-dot fa-3x"></i><p class="m1 fs-4">Durban, Kwa-Zulu Natal  </p></span>
-                <span class="mt-5"><i class="fa-solid fa-phone fa-3x "></i><p class="m1 fs-4"><strong>Phone: </strong><a href="tel:+27826816549" class="font-l contactDetail">082 681 6549</a></p></span>
-                <span class="mt-5"><i class="fa-solid fa-envelope fa-3x "></i><p class="m1 fs-4"><strong>Email: </strong> <a href="mailto:simmone@simscare.co.za" class="contactDetail">simmone@simscare.co.za</a></p></span>
-            </div>
+        
+            <div class="contact-details mt-5 mt-lg-0 text-center col-lg-6 d-flex flex-column align-items-center justify-content-center">
+                <div class="mb-3"><i class="fa-solid fa-location-dot fa-3x"></i><p class="m-1 fs-4">Durban, Kwa-Zulu Natal</p></div>
+                <div class="mb-3"><i class="fa-solid fa-phone fa-3x"></i><p class="m-1 fs-4"><strong>Phone: </strong><a href="tel:+27826816549" class="contactDetail">082 681 6549</a></p></div>
+                <div class="mb-3"><i class="fa-solid fa-envelope fa-3x"></i><p class="m-1 fs-4"><strong>Email: </strong> <a href="mailto:simmone@simscare.co.za" class="contactDetail">simmone@simscare.co.za</a></p></div>
+            </div> -->
         </div>
     </div>
 </div>
